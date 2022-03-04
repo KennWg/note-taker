@@ -12,8 +12,6 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-const { notes } = require('./db/db.json');
-
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}!`);
 });
